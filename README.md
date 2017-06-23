@@ -1,3 +1,8 @@
+## Lifecycle issue
+1. Run `npm start`
+2. See the terminal, and notice that `1. Create`, `2. Input`, and `3. Render` print in the expected order.
+3. Open the browser and go to `localhost:8080`. Notice how `3. Render` and `4. Mount` is printed.
+
 # Marko Starter Demo
 This repo demos the basic features of [`marko-starter`](https://github.com/marko-js/marko-starter).
 
