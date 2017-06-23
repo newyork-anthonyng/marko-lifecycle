@@ -1,0 +1,36 @@
+class {
+  onCreate() {
+    console.log('1. Create');
+    this.state = { count:0 };
+  }
+  onInput() {
+    console.log('2. Input');
+  }
+  onRender() {
+    console.log('3. Render');
+  }
+  onMount() {
+    console.log('4. Mount');
+  }
+  increment() {
+    this.state.count++;
+  }
+}
+
+style {
+  .count {
+    color:#70b;
+    font-size:3em;
+  }
+  .example-button {
+    font-size:1em;
+    padding:0.5em;
+  }
+}
+
+<div.count>
+  ${state.count}
+</div>
+<button.example-button on-click('increment')>
+  Click me!
+</button>
